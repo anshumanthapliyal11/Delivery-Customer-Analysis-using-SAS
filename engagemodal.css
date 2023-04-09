@@ -1,0 +1,113 @@
+body.engagemodal-active{
+    overflow:hidden !important;
+}
+.engagemodal-wrapper{
+}
+.engagemodal-wrapper.engagemodal-active{
+    display:block;
+}
+.engagemodal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999999998;
+    background-color: rgba(0,0,0,0.5);
+}
+.engagemodal-dialog{
+    z-index:999999999;
+    position: absolute;
+    top: 10em;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width:50em;
+    margin: 0 auto 2em auto;
+    box-sizing: border-box;
+    background: #FFF;
+    box-shadow: 0px 0px 2px 2px #6B6B6B;
+}
+/*'width: 50%; height: 75%;max-width: 840px;overflow-x:"hidden"; overflow-y:"scroll"; border-width: 0px;display: block; ' +*/
+/*'position: absolute;z-index:999999;' +*/
+/*' z-index: 130002; position: fixed; bottom: -1000px; top: auto; left: -1000px; right: auto;border:none;';*/
+
+
+.engagemodal-close-in, .engagemodal-close-out{
+    position:absolute;
+    right: 1em;
+    top: 1em;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+}
+.engagemodal-close-in:hover, .engagemodal-close-out:hover{
+    opacity:1;
+}
+.engagemodal-close-in:before, .engagemodal-close-in:after, .engagemodal-close-out:before, .engagemodal-close-out:after{
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+}
+.engagemodal-close-in:before, .engagemodal-close-in:after{
+    background-color: #333;
+}
+.engagemodal-close-out:before, .engagemodal-close-out:after{
+    background-color: #CCC;
+}
+.engagemodal-close-in:before, .engagemodal-close-out:before{
+    transform: rotate(-45deg);
+}
+.engagemodal-close-in:after, .engagemodal-close-out:after{
+    transform: rotate(45deg);
+}
+.engagemodal-title{
+    padding: 1em;
+    text-align: center;
+    font-size: 1.25em;
+    box-sizing:border-box;
+}
+.engagemodal-body{
+    padding: 1em;
+    overflow:auto;
+    max-height:50%;
+    box-sizing:border-box;
+}
+.engagemodal-buttons{
+    box-sizing:border-box;
+    text-align:center;
+}
+.engagemodal-button{
+    padding: 0.6em 1em;
+    border:0;
+    margin:1em 0.5em;
+    color:#000;
+    text-transform:uppercase;
+    cursor:pointer;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.engagemodal-button-red{background-color:#e51c23;}
+.engagemodal-button-blue{background-color:#007aff;}
+.engagemodal-button-green{background-color:#00ca3c;}
+.engagemodal-button-gray{background-color:#969696;}
+
+@media only screen and (max-width:53em){
+    .engagemodal-dialog{
+        width: auto;
+        margin: 0 auto 5px auto;
+        top: 5px;
+        right: 5px;
+        left: 5px;
+    }
+}
+@media only screen and (max-width:32em){
+    .engagemodal-button{
+        display:block;
+        margin: 0.5em;
+    }
+}

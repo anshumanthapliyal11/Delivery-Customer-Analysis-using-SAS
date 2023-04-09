@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "epmenu-font";
+  src:url("../fonts/epmenu-font.eot");
+  src:url("../fonts/epmenu-font.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/epmenu-font.woff") format("woff"),
+    url("../fonts/epmenu-font.ttf") format("truetype"),
+    url("../fonts/epmenu-font.svg#epmenu-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "epmenu-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "epmenu-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hiker:before {
+  content: "\62";
+}
+.icon-jupyter-logo:before {
+  content: "\63";
+}
+.icon-sas-studio:before {
+  content: "\64";
+}
+.icon-sas-va-icon:before {
+  content: "\65";
+}
+.icon-plane-departure:before {
+  content: "\66";
+}
+.icon-applications:before {
+  content: "\61";
+}
+.icon-sas-viya-cloud:before {
+  content: "\67";
+}
+.icon-github:before {
+  content: "\68";
+}
+.icon-feedback-icon-trans:before {
+  content: "\69";
+}

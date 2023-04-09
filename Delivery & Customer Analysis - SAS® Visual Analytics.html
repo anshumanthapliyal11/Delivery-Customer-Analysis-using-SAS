@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://v4e046.vfe.sas.com/SASVisualAnalytics/ -->
+<html class="sap-desktop sapUiTheme-sas_corporate sapUiMedia-Std-Desktop sapUiMedia-StdExt-LargeDesktop" dir="ltr" data-sap-ui-browser="cr111" data-sap-ui-os="mac" lang="en" data-sap-ui-animation="on" data-sap-ui-animation-mode="full"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script>performance && performance.mark("sas-hc-startup")</script>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="icon" type="image/x-icon" href="https://v4e046.vfe.sas.com/htmlcommons/10.1/shcb20201026201152/resources/sas/hc/ui/commons/themes/sas_corporate/img/ico/SASLogo_toolbar.ico">
+  <meta content="/htmlcommons/10.1/shcb20201026201152/resources/sas/hc/ui/commons/themes/sas_corporate/img/ico/SASLogo_toolbar.ico" itemprop="image">
+  <link rel="stylesheet" href="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/splash.css" media="screen">
+  
+    
+    
+ <style type="text/css">.gshDisplay { border-color: #6878dd; font-size: 11; margin-bottom: 6; }</style><script src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/library-preload.js" data-sap-ui-module="sap/ui/core/library-preload.js"></script><script src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/library-preload(1).js" data-sap-ui-module="sas/hc/ui/core/library-preload.js"></script><title>Delivery &amp; Customer Analysis - SAS® Visual Analytics</title><script charset="UTF-8" src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/inject.js"></script><link rel="stylesheet" href="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/enjoyhint_custom.css"><link rel="stylesheet" href="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/style.css"><link rel="stylesheet" href="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/engagemodal.css"><link rel="stylesheet" href="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/epmenu-font-styles.css"><script src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/all.js"></script><script src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/engagemodal.js"></script><script src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/enjoyhint_custom_test.js"></script><script src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/kinetic.js"></script></head>
+  
+ <body class="sapUiBody" data-new-gr-c-s-check-loaded="14.1103.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1103.0">
+  
+  
+<style>
+#sas-hc-splash-alertText {
+  position: absolute;
+  clip: rect(0px,0px,0px,0px);
+}
+</style>
+
+
+    <script id="app-confignls">
+  (function() {
+    if (!window.hasOwnProperty('sap-ui-config')) {
+        window['sap-ui-config'] = {};
+    }
+    var config = window['sap-ui-config'];
+    if (!config.hasOwnProperty('xx-supportedLanguages')) {
+        config['xx-supportedLanguages'] = ['ar','ar_XX','cs','da','de','de_DE_pseudo','el','en','es','es_ES_pseudo','fr','fr_FR_pseudo','he','hr','hu','it','it_IT_pseudo','iw','ja','ko','lt_LT_pseudo','nb','nl','no','pl','pl_XX','pt','pt_BR','ru','ru_RU_pseudo','sh','sk','sl','sr','sv','th','tr','zh_CN','zh_CN_pseudo','zh_TW','zh_XX'];
+    }
+    if (!config.hasOwnProperty('sas')) {
+        config['sas'] = {};
+    }
+    var sas = config['sas'];
+    if (!sas.hasOwnProperty('ltjs')) {
+        sas['ltjs'] = {};
+    }
+    var ltjs = sas['ltjs'];
+    ltjs['xx-calculated-dependencies'] = ["commons", "sasicu", "gtl"];
+}());  </script>
+    <script id="hc-config">
+(function(){
+  window['sap-ui-config'] = window['sap-ui-config'] || {};
+  var config = window['sap-ui-config'];
+  config.sas = config.sas || {};
+  config.sas.SASDrive={}; 
+  config.sas.SASDrive.help={}; 
+  config.sas.SASDrive.help.softwareId="DRIVE"; 
+  config.sas.SASDrive.help.softwareVersion="2.2"; 
+  config.sas.contextPath='/SASDrive'; 
+  config.sas.localJSBasePath='/SASDrive/resources/shcb1680921470159'; 
+  config.sas.commonsUrl='/htmlcommons/10.1/shcb20201026201152/resources'; 
+  config.sas.commonsContextUrl='/htmlcommons'; 
+  config.sas.commonsCachebuster='shcb20201026201152'; 
+  config.sas.commonsVersion='10.1'; 
+  config.sas.commons={}; 
+  config.sas.commons['version']='10.1'; 
+  config.sas.commons['cloud']={}; 
+  config.sas.commons['cloud']['enable']='true'; 
+  config.sas.appId='SASApplicationSwitcherBootstrap'; 
+  config.language='en-us'; 
+  config.sas.crossDomainProxy='/crossdomainproxy/'; 
+  config.sas.servicePlatform='PETRICHOR'; 
+  config.sas.themeUrl='/htmlcommons/10.1/shcb20201026201152/resources'; 
+  config.sas.applicationSwitcherEnabled=true; 
+  config.sas.sessionTimeoutUrl='%2FSASLogon%2Ftimedout%3FcallbackUrl%3D%2FSASDrive%2F'; 
+  config.sas.sessionMaxInActiveInterval=1800; 
+  config.sas.sessionTimeoutWarningDuration=300; 
+  config.sas.appName = 'SAS\u00ae Drive';
+  config.theme = config.theme || 'sas_corporate';
+}());
+</script>
+<script id="hc-precore" src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/preCore.js"></script>
+  <script src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/sap-ui-core.js" id="sap-ui-bootstrap"></script>
+    <script type="text/javascript" id="hc-init">
+    sap.ui.getCore().attachInit(function(){
+         sap.ui.require(['sas/hc/ui/core/util'], function(util){
+            util._doOnAppSwitcherBootstrap('SASDrive')
+        });
+    });
+  </script>
+ 
+<div id="appsContainer" style="position: absolute; overflow: hidden; top: 0px; left: 0px; width: 100%; height: 100%;"><iframe id="SASDrive_iframe" loaded="false" allowfullscreen="true" tabindex="-1" active="false" src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/saved_resource.html" style="display: none; height: 100%; width: 100%; border-width: 0px;"></iframe><iframe id="VANextLogon_iframe" loaded="false" allowfullscreen="true" tabindex="0" active="true" src="./Delivery &amp; Customer Analysis - SAS® Visual Analytics_files/saved_resource(1).html" style="display: inline; height: 100%; width: 100%; border-width: 0px;"></iframe></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,986 @@
+/*------------------------------------------------------------------
+Bootstrap Admin Template by EGrappler.com
+------------------------------------------------------------------*/
+/*/opt/sas/viya/home/var/www/html/htmlcommons/7.0/resources/sas/hc/ui/core/themes/sas_base/images/svg_backgrounds*/
+
+/*/opt/sas/viya/home/var/www/html/htmlcommons/7.0/resources/sas/hc/ui/commons/themes/sas_corporate*/
+/*library.css*/
+/*h1.sasBannerText.sasBannerHeading{color:#fff;font-size:.875rem}*/
+/*h1.sasBannerText.sasBannerHeading{color:#fff;font-size:.875rem;padding:30px;}*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.loadingparent{
+	left:50%;
+	top:50%;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	position:absolute;
+}
+.loadingparent:after{
+	content:'';
+	left:50%;
+	top:50%;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	position:absolute;
+	background-color:grey;
+	opacity:0.2;
+}
+.loadingchild{
+	left:50%;
+	top:50%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	position:absolute;
+}
+.capability-table{
+	font-family: "avenir-light",Arial,Helvetica,sans-serif;
+	font-size: 1.5rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: #333;
+}
+
+
+
+table.scroll-color {
+	font-family: "avenir-light",Arial,Helvetica,sans-serif;
+	width: 100%;
+	font-size: 1.5rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: #333;
+}
+table.scroll-color tbody tr th {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgb(2 86 134 / 20%);
+	margin: 0;
+	padding: 8px;
+	vertical-align: top;
+	border: 1px solid #bcbec0 !important;
+	background-color: #0378cd;
+	text-align: left;
+}
+table.scroll-color tbody tr td {
+	color: #333;
+	margin: 0;
+	padding: 8px;
+	vertical-align: top;
+	border: 1px solid #bcbec0 !important;
+}
+
+.xsmall-txt-light{
+	font-size: 1.6rem !important;
+	font-family: "avenir-light",Arial,Helvetica,sans-serif;
+	line-height: 115%;
+}
+
+
+
+
+
+
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+	color: #000!important;
+	background-color: #f1f1f1!important;
+}
+.w3-round, .w3-round-medium {
+	border-radius: 4px;
+}
+
+.w3-white, .w3-hover-white:hover {
+	color: #000!important;
+	background-color: #fff!important;
+}
+.w3-container, .w3-panel {
+	padding: 0.01em 16px;
+}
+.w3-blue, .w3-hover-blue:hover {
+	color: #fff!important;
+	background-color: #2196F3!important;
+}
+
+
+.new_engagenavbar {
+	text-align:center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 16px;
+	/*width: 500px;*/
+	margin: 0 auto;
+	z-index: 10001;
+	background-color: #000000;
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+
+}
+.new_engagenavbutton {
+	z-index: 10001;
+	color: #ffffff;
+	background-color: #000000;
+	border: none;
+	padding: .3em .7em .3em .7em;
+	font-family: “AvenirNext”, -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12.44px;
+	line-height: 17px;
+	cursor: pointer;
+}
+
+.new_engagechatbutton {
+	cursor: pointer;
+	margin-top: 0px;
+}
+.engagediskquotaleftbar {
+	text-align:center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	/*height: 50px;*/
+	width: 220px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 0px;
+	margin: 0 auto;
+	background-color: #000000;
+	color: #ffffff;
+	z-index: 10000;
+	font-family: “AvenirNext”, -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12.44px;
+	line-height: 17px;
+}
+.engagediskquotaalert {
+	text-align:center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	/*height: 50px;*/
+	width: 500px;
+	padding: 15px;
+	margin-left: 0px;
+	margin: 0 auto;
+	background-color: #000000;
+	color: #ffffff;
+	z-index: 10000;
+	font-family: “AvenirNext”, -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12.44px;
+	line-height: 17px;
+}
+
+
+.engagechatbutton {
+	margin-top: 4px;
+}
+
+
+.engagenavbar {
+	text-align:center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	width: 500px;
+	margin: 0 auto;
+	z-index: 10001;
+}
+.engagedaysleftbar {
+	text-align:center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+	height: 22px;
+	width: 110px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 0px;
+	margin: 0 auto;
+	background-color: #ff751a;
+	color: #ffffff;
+	z-index: 10001;
+}
+.engagedaysrightbar {
+	text-align:center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+	height: 22px;
+	width: 110px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 0px;
+	margin: 0 auto;
+	background-color: #ff751a;
+	color: #ffffff;
+	z-index: 10001;
+}
+
+.engagenavbutton {
+	line-height: normal;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: normal;
+	word-spacing: normal;
+	display: inline-block;
+	z-index: 10001;
+	background-color: #ff751a;
+	color: #ffffff;
+
+
+	border-radius: 0px;
+	width: 40px;
+	height: 32px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-right: 0px;
+	border-right-color: grey;
+	border-right-width:2px;
+
+	/*float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;*/
+}
+
+.md-toolbar-tools {
+	background-color: #0378cd;
+	color: #fff;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+	background-color: #0378cd;
+	color: #fff;
+	@extend .avenir-bold;
+}
+
+/* Change the color of links on hover */
+.engagenavbutton:not(.nohover):hover {
+	background-color: #C14B16;
+}
+
+/* Add a color to the active/current link */
+.engagenavbutton.trialactive {
+	background-color: #C14B16;
+}
+
+.engagedaysleft{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.md-icon[disabled] {
+	color: #a8a8a8;
+
+}
+
+.engagenavbutton[disabled] {
+	color: #858585;
+	background-color: rgb(255, 203, 128);
+}
+
+diabled-class {
+
+}
+
+.faqaccordion {
+	background-color: #eee;
+	color: #444;
+	padding: 18px;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faqpanel {
+	padding: 18px;
+	background-color: white;
+	overflow: hidden;
+
+}
+
+
+.sasMenuMask {
+	top: 3px;
+	left: 6px;
+	position: fixed;
+	/*width: 440px;*/
+	height: 26px;
+	z-index: 98;
+
+	color: #ffffff;
+	font-size: .7rem;
+	/*display: none;*/
+}
+
+.sasMenuMaskbtn.md-icon-button {
+	line-height: 2px;
+	height: 24px;
+	width: 28px;
+	padding: 0px;
+	margin: 0px;
+	padding-right: 5px;
+}
+.sasMenuMaskbtn.md-button {
+	line-height: 5px;
+	min-height: 24px;
+	width: 32px;
+	padding: 0px;
+	padding-left: 10px;
+	margin: 0px;
+	font-size: 16px
+}
+
+
+
+
+table.blueTable {
+	border: unset;
+	/*1px solid #1C6EA4;*/
+	/*background-color: #E4E7EA;*/
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+	border-right: 1px solid #eaedf0;
+	border-bottom: 1px solid #eaedf0;
+	padding: 3px 2px;
+	font-size: 1.0em;
+}
+table.blueTable tr td:last-child, table.blueTable th:last-child {
+	border-right: 1px solid transparent;
+}
+table.blueTable tbody td {
+	padding-left: 10px;
+	/*padding: .25rem 1rem 5px 1rem;*/
+}
+table.blueTable tr:nth-child(even) {
+	/*background: #b2b2b2;*/
+}
+table.blueTable tr:last-child td {
+	border-bottom: 1px solid transparent;
+
+}
+/*table.blueTable thead {*/
+/*	background: #001019;*/
+/*	background: -moz-linear-gradient(top, #404c52 0%, #192830 66%, #001019 100%);*/
+/*	background: -webkit-linear-gradient(top, #404c52 0%, #192830 66%, #001019 100%);*/
+/*	background: linear-gradient(to bottom, #404c52 0%, #192830 66%, #001019 100%);*/
+/*	border-bottom: 2px solid #444444;*/
+/*}*/
+table.blueTable thead th {
+	font-size: 1.15em;
+
+	/*font-size: 15px;*/
+	font-weight: bold;
+	padding-left: 10px;
+	/*color: #FFFFFF;*/
+	text-align: left;
+	/*border-left: 2px solid #D0E4F5;*/
+}
+table.blueTable thead th:first-child {
+	border-left: none;
+}
+
+table.blueTable tfoot td {
+	font-size: 14px;
+}
+table.blueTable tfoot .links {
+	text-align: right;
+}
+table.blueTable tfoot .links a{
+	display: inline-block;
+	background: #1C6EA4;
+	color: #FFFFFF;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
+
+
+
+.myNext {
+	color: #ff751a;
+	border-color: #ff751a;
+}
+.myNext:hover {
+	background: #ff751a;
+	border-color: #ff751a;
+}
+
+
+
+
+.mydialogcontent {
+	max-width: 800px;
+	width: 800px;"
+}
+
+.introjs-helperLayer {
+	background-color: white;
+	opacity: 0.2;
+	border-color: #ff751a;
+	/*border: 2px solid rgba(255, 117, 26, 1);*/
+}
+
+.rightsection {
+	border-left: 3px solid lightgrey;
+	padding-left: 5px;
+}
+
+.leftsection {
+	padding-right: 10px;
+}
+
+.topsection {
+	padding-bottom: 10px;
+}
+
+.bottomsection {
+	/*border-top: 3px solid lightgrey;*/
+	padding-top: 10px;
+}
+
+md-menu-content {
+	padding: 0px;
+	margin: 0px;
+}
+md-subheader-inner {
+	padding: 4px;
+}
+.md-subheader-inner {
+	padding: 4px;
+}
+
+md-toast.md-bottom {
+	left: 50%;
+	margin-left: -150px;
+}
+
+md-toast.md-default-theme .md-toast-content, md-toast .md-toast-content {
+	/*background-color: #80badf;
+	color: #953b39;
+	font-size: 20px;*/
+}
+
+md-toast .md-toast-content span {
+}
+
+.interfacetext {
+	font-size: 18px;
+	font-weight: bold;
+}
+.outer {
+	position: relative;
+	min-height: 200px;
+	max-width: 1024px;
+	width: 100%;
+	margin: 10px auto;
+	background: white;
+	/*border-radius: 5px;*/
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+	border: 1px solid white;
+	height:100%;
+	overflow: hidden;
+}
+.md-toolbar-tools {
+	/*font-size: 20px;*/
+	font-size: 0.75em;
+
+	letter-spacing: 0.005em;
+	box-sizing: border-box;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 29px;
+	max-height: 29px;
+	padding: 0px 16px;
+	margin: 0px;
+}
+
+.outerdialog {
+	max-width: unset;
+	-webkit-box-shadow: unset;
+	-moz-box-shadow: unset;
+	box-shadow: unset;
+	border: 1px solid gray;
+	/*border: unset;*/
+}
+.content-outer {
+	text-align: left;
+	padding: 0px;
+	overflow-y: scroll;
+}
+.content-inner {
+	/*display: block;*/
+	height: 100%;
+	overflow: hidden;
+}
+.logo-header {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+}
+.logo-header img {
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.layout-column {
+	height: 100%;
+}
+
+.logo-header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.hero {
+	min-height: 100px;
+	height: 160px;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 0px;
+	position: relative;
+}
+.hero .bg {
+	position: absolute;
+	top: -100px;
+	left: -40px;
+	height: 400px;
+	z-index: 0;
+}
+.hero .bg img {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: 0;
+	min-width: 100%;
+	height: auto;
+}
+.hero .hero-content {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	z-index: 50;
+	position: absolute;
+	top: 50px;
+	color: white;
+}
+/**{
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+[ng-drag]{
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+[ng-drag]{
+	width: 100px;
+	height: 100px;
+	color:white;
+	text-align: center;
+	padding-top:40px;
+	display: inline-block;
+	margin:0 10px;
+	cursor: move;
+}
+ul.draggable-objects:after{
+
+	z-index: 9999999;
+	display: block;
+	content:"";
+	clear:both;
+}
+.draggable-objects li{
+	float:left;
+	display: block;
+	width: 120px;
+	height:100px;
+}*/
+/*[ng-drag].drag-over{
+	border:solid 1px red;
+}*/
+[ng-drag].dragging{
+	opacity: 0.5;
+}
+
+
+[ng-drop]{
+	background-color: #0a0a0a;
+	opacity: .2;
+	width: 50%;
+	height:50%;
+	position: absolute;
+	text-align: center;
+	display: block;
+	margin:0px auto;
+}
+[ng-drop].drag-enter{
+	border:solid 5px red;
+}
+[ng-drop] span.title{
+	display: block;
+	position: absolute;
+	top:50%;
+	left:50%;
+	width: 200px;
+	height: 20px;
+	margin-left: -100px;
+	margin-top: -10px;
+}
+[ng-drop] div{
+	position: relative;
+	z-index: 2;
+}
+
+
+md-content {
+	background-color: transparent;
+}
+
+
+/*.mdcontentscroll {*/
+/*overflow: auto;*/
+/*}*/
+#md-tooltip .md-content {
+	/*position: relative;*/
+	font-size: 8px;
+	opacity: 1;
+	height: auto;
+
+}
+
+.md-tooltip.md-origin-top {
+	margin-top: -24px; }
+.md-tooltip.md-origin-right {
+	margin-left: 24px; }
+.md-tooltip.md-origin-bottom {
+	margin-top: 2px; }
+.md-tooltip.md-origin-left {
+	margin-left: -24px; }
+
+
+
+[engagetooltip]{
+	margin:20px;
+	position:relative;
+}
+[engagetooltip]::before {
+	content: "";
+	position: absolute;
+	top:-6px;
+	left:50%;
+	transform: translateX(-50%);
+	border-width: 4px 6px 0 6px;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.7) transparent transparent     transparent;
+	z-index: 100;
+}
+[engagetooltip]::after {
+	content: attr(tooltip);
+	position: absolute;
+	left:50%;
+	top:-6px;
+	transform: translateX(-50%)   translateY(-100%);
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	color: #fff;
+	padding:4px 2px;
+	font-size: 12px;
+	min-width: 80px;
+	border-radius: 5px;
+	pointer-events: none;
+}
+
+.custom-tooltip {
+	position: relative;
+	display: inline-block;
+	/*border-bottom: 1px dotted black;*/
+}
+
+.custom-tooltip .custom-tooltiptext {
+	visibility: hidden;
+	background-color: white;
+	white-space: nowrap;
+	color: #000000;
+	text-align: center;
+	/*border-radius: 6px;*/
+	/*padding: 0px 0;*/
+	padding-left: 10px;
+	padding-right: 10px;
+	opacity: 0.9;
+	border: 1px solid #000000 !important;
+	font-family: 'Open Sans';
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	/*left: 50%;*/
+	margin-left: -40px;
+	margin-bottom: 10px;
+}
+
+.custom-tooltip:hover .custom-tooltiptext {
+	visibility: visible;
+}
+
+
+
+.engage-menu-counter {
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
+	padding: 1px 5px;
+	border-radius: 50%;
+	background-color: grey;
+	color: white;
+	font-size: .75rem;
+}
+
+.smallbuttons {
+	margin: 2px;
+	margin-top: 25px;
+	min-width: 32px;
+}
+
+.smallbuttonsmid {
+	margin: 2px;
+	min-width: 32px;
+	color: #ffffff;
+
+}
+/*.smallbuttonsmiddisabled {
+	color: #a8a8a8;
+
+}*/
+
+.md-icon[disabled] {
+	color: #a8a8a8;
+
+}
+
+.midtoolbar {
+	float: right;
+	padding-right: 20px;
+}
+
+.md-button {
+	text-transform: none;
+	border-radius: unset;
+	min-height: 30px;
+	line-height: 30px;
+}
+
+.md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab, .md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised {
+	background-color: #0378cd;
+	color: #fff;
+	/*color: rgba(255,255,255,0.87);*/
+	/*background-color: rgb(31,52,76);*/
+	opacity: 1.0;
+}
+.md-button.md-raised:not([disabled]) {
+	box-shadow: unset;
+	/*rgba(0, 0, 0, 0.26) 0px 2px 5px 0px;*/
+}
+.md-button.md-default-theme.md-accent[disabled], .md-button.md-accent[disabled], .md-button.md-default-theme.md-fab[disabled], .md-button.md-fab[disabled], .md-button.md-default-theme.md-raised[disabled], .md-button.md-raised[disabled], .md-button.md-default-theme.md-warn[disabled], .md-button.md-warn[disabled], .md-button.md-default-theme[disabled], .md-button[disabled] {
+	opacity: .3;
+}
+
+.productButton {
+	/*padding-right: 18px;*/
+	padding: 10px;
+	float: left;
+	font-weight: bold;
+	display:block;
+	width:230px;
+	text-align: left;
+	text-transform: none;
+	white-space: normal;
+	line-height: 18px;
+}
+.productor {
+	width: 218px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.myimage {
+	display: block;
+	max-width:48px;
+	max-height:48px;
+	width: auto;
+	height: auto;
+}
+
+.fabSpeedDialdemoBasicUsage .text-capitalize {
+	text-transform: capitalize; }
+
+.fabSpeedDialdemoBasicUsage .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+	background-color: #000 !important; }
+
+.fabSpeedDialdemoBasicUsage p.note {
+	font-size: 1.2rem; }
+
+.fabSpeedDialdemoBasicUsage .lock-size {
+	min-width: 300px;
+	min-height: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto; }
+
+
+/*.introjs-helperNumberLayer {*/
+/*visibility: hidden;*/
+/*}*/
+
+.myfab-menu-bottomright {
+	/*position: absolute !important;*/
+	position: fixed !important;
+	bottom: 30px;
+	right: 30px;
+	z-index: 999999;
+}
+
+.myfab-menu-bottomleft {
+	/*position: absolute !important;*/
+	position: fixed !important;
+	bottom: 30px;
+	left: 30px;
+	z-index: 999999;
+}
+
+.myfab-menu-topright {
+	/*position: absolute !important;*/
+	position: fixed !important;
+	top: 30px;
+	right: 30px;
+	z-index: 999999;
+}
+
+.myfab-menu-topleft {
+	/*position: absolute !important;*/
+	position: fixed !important;
+	top: 30px;
+	left: 30px;
+	z-index: 999999;
+}
+
+
+
+
+
+.interface-menu-bottomright {
+	position: absolute !important;
+	bottom: 100px;
+	right: 48px;
+	z-index: 999999;
+}
+
+.interface-menu-bottomleft {
+	position: absolute !important;
+	bottom: 100px;
+	left: 48px;
+	z-index: 999999;
+}
+
+.interface-menu-topright {
+	position: absolute !important;
+	top: 100px;
+	right: 48px;
+	z-index: 999999;
+}
+
+.interface-menu-topleft {
+	position: absolute !important;
+	top: 100px;
+	left: 48px;
+	z-index: 999999;
+}
+
+.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
+	left: 7px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text .small-txt-light {
+	font-size: 18px !important;
+	font-size: 1.8rem !important;
+	font-family: "avenir-light",Arial,Helvetica,sans-serif;
+	line-height: 115%;
+}
+
+
+
+
+.progressCircularBarContainer {text-align:left;display:inline-block;}
+.progressCircularBarContainer b {text-align:left;clear:both;display:block;font-size:40px;color:#5c9cec;}
+.progressCircularBar {position:relative;margin:10px;display:inline-block;}
+.progressCircularBar canvas {display:block;position:absolute;top:0;left:0;}
+.progressCircularBar span {display:block;text-align:center;vertical-align: middle;padding: unset;}
